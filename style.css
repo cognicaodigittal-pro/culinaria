@@ -267,7 +267,6 @@ h4 {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -389,5 +388,9 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .pricing-cards-container {
+        flex-wrap: wrap;
     }
 }
