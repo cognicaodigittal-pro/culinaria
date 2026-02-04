@@ -143,35 +143,33 @@
     <section class="section pricing" id="pricing">
         <div class="container">
             <h2 class="section-title">Escolha Seu Plano</h2>
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Plano</th>
-                        <th>Valor</th>
-                        <th>O Que Inclui</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Plano Iniciante</td>
-                        <td>R$7,00</td>
-                        <td>✅ E-book completo + ✅ Checklist 7 dias</td>
-                    </tr>
-                    <tr class="highlight-row">
-                        <td>Plano Completo</td>
-                        <td>R$17,00</td>
-                        <td>✅ E-book + ✅ Checklist + 🎁 TODOS OS BÔNUS EXCLUSIVOS</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="pricing-cards-container">
+                <!-- Plano Iniciante -->
+                <div class="pricing-card">
+                    <h3>Plano Iniciante</h3>
+                    <div class="price">R$7,00</div>
+                    <ul class="card-features">
+                        <li>✅ E-book completo com passo a passo</li>
+                        <li>✅ Checklist de produção de 7 dias</li>
+                    </ul>
+                    <button class="btn btn-secondary">🔘 Quero o Plano Iniciante</button>
+                </div>
 
-            <div style="text-align: center; margin-top: 30px; font-weight: bold; color: var(--success-green);">
-                💡 Recomendado: Plano Completo mais lucro, mais ferramentas, menos trabalho
-            </div>
-
-            <div class="pricing-actions">
-                <button class="btn btn-secondary">🔘 Quero o Plano Iniciante por R$7</button>
-                <button class="btn btn-primary">🔘 Quero o Plano Completo por R$17</button>
+                <!-- Plano Completo -->
+                <div class="pricing-card highlighted-card">
+                    <div class="badge">Recomendado</div>
+                    <h3>Plano Completo</h3>
+                    <div class="price">R$17,00</div>
+                    <ul class="card-features">
+                        <li>✅ E-book completo</li>
+                        <li>✅ Checklist 7 dias</li>
+                        <li>🎁 <strong>TODOS OS BÔNUS EXCLUSIVOS</strong></li>
+                        <li>Planilha de precificação</li>
+                        <li>Cardápio digital</li>
+                        <li>Posts para redes sociais</li>
+                    </ul>
+                    <button class="btn btn-primary">🔘 Quero o Plano Completo</button>
+                </div>
             </div>
         </div>
     </section>

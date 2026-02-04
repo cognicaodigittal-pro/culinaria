@@ -258,56 +258,92 @@ h4 {
     display: block;
 }
 
-/* Pricing Table */
+/* Pricing Section - Start Refactor */
 .pricing {
     background-color: white;
 }
 
-.pricing-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 40px;
-    box-shadow: var(--shadow-card);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.pricing-table th,
-.pricing-table td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-}
-
-.pricing-table th {
-    background-color: var(--primary-chocolate);
-    color: white;
-    font-size: 1.2rem;
-}
-
-.pricing-table .highlight-row {
-    background-color: var(--soft-pink);
-    font-weight: 700;
-}
-
-.pricing-actions {
+.pricing-cards-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.btn-secondary {
-    background: transparent;
-    border: 2px solid var(--primary-chocolate);
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: var(--shadow-card);
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: var(--primary-chocolate);
+    margin-bottom: 30px;
 }
 
-.btn-secondary:hover {
-    background: var(--primary-chocolate);
-    color: white;
+.card-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
 }
+
+.card-features li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.highlighted-card {
+    border: 2px solid var(--accent-gold);
+    background: linear-gradient(to bottom, #fff, #FFFDF5);
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.highlighted-card:hover {
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-gold);
+    color: var(--dark-chocolate);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.pricing-card .btn {
+    width: 100%;
+}
+
+/* Pricing Section - End Refactor */
 
 /* Urgency & FAQ */
 .urgency {
@@ -353,10 +389,5 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
-    }
-
-    .pricing-table {
-        display: block;
-        overflow-x: auto;
     }
 }
